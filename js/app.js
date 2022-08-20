@@ -1,13 +1,13 @@
 function getPin(){
     const pin=generatePin();
-    console.log("pin: " + pin);
+    // console.log("pin: " + pin);
     const pinString=pin+'';
 
     if(pinString.length===4){
         return pin;
     }
    else{
-    console.log("this is not a valid pin four digit",pin);
+    // console.log("this is not a valid pin four digit",pin);
     return getPin();
    }
 }
@@ -107,7 +107,7 @@ submitBtn.addEventListener("click", function(e){
             matching.style.display="none";
     
             if(  leftNumber.innerText==0){
-                console.log("got it")
+                // console.log("got it")
                 // submitBtn.removeAttribute("disabled");
                 submitBtn.disabled = true;
                 alert("Please wait 24 hours for active it");
